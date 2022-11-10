@@ -12,10 +12,41 @@
     />
     <!-- Tailwind core CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/dist/styles.css" rel="stylesheet" />
+    <script src="./app.js"></script>
   </head>
 
   <body>
-    <nav></nav>
+    <nav class="bg-black">
+      <ul class="flex justify-between px-12 py-3">
+        <li>
+          <a class="text-white font-bold" href="">DBP LEARN</a>
+        </li>
+        <li>
+          <a
+            id="menu-icon"
+            class="menu-icon flex bg-white md:hidden"
+            onclick="toggleNavbar('menu-items')"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </a>
+          <ul
+            id="menu-items"
+            class="md:flex hidden md:space-x-6 md:justify-around"
+          >
+            <li>
+              <a class="text-white" href="">About us</a>
+            </li>
+            <li>
+              <a class="text-white" href="">Services</a>
+            </li>
+            <li>
+              <a class="text-white" href="">Clients</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
     <main></main>
     <footer></footer>
     <script src="./app.js"></script>
