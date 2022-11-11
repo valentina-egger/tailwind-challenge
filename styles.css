@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .card-custom {
+    @apply border-gray-500 rounded-sm bg-white hover:shadow-lg pb-2;
+  }
+
+  .img-custom {
+    @apply rounded-t-sm w-full;
+  }
+}
