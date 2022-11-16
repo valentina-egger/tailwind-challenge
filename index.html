@@ -12,12 +12,241 @@
     />
     <!-- Tailwind core CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./dist/styles.css" rel="stylesheet" />
+    <script src="./app.js"></script>
   </head>
 
   <body>
-    <nav></nav>
-    <main></main>
-    <footer></footer>
+    <nav class="bg-black sticky top-0 py-1">
+      <ul class="grid grid-cols-2 justify-between px-12 md:py-3">
+        <li>
+          <a class="text-white font-bold" href="">DBP LEARN</a>
+        </li>
+        <li>
+          <a
+            id="menu-icon"
+            class="md:hidden float-right text-white r-0 sticky"
+            onclick="toggleNavbar('menu-items')"
+          >
+            <i class="fas fa-solid fa-bars"></i>
+          </a>
+        </li>  
+        <ul
+            id="menu-items"
+            class="md:flex md:col-start-3 md:row-start-1 hidden md:space-x-6 md:justify-around text-gray-500 md:text-white"
+          >
+            <li>
+              <a href="">About us</a>
+            </li>
+            <li>
+              <a href="">Services</a>
+            </li>
+            <li>
+              <a href="">Clients</a>
+            </li>
+          </ul>      
+      </ul>
+    </nav>
+    <main>
+      <div class="bg-gray-500 flex flex-col items-center p-16 space-y-2">
+        <h1 class="text-white text-2xl font-bold">Tailwind Challenge</h1>
+          <p class="text-white text-center">
+            The aim of this challenge is to put into practice how to use
+            Tailwind to create a responsive UI.</br>
+            Before adding custom styles, check the docs to see if those styles
+            can be achieved using </br> a Tailwind class.
+          </p>
+        <div class="space-x-3">
+          <button class="btn bg-blue-600 rounded-md text-white p-2">Tailwind Docs</button>
+          <button class="btn bg-slate-200 rounded-md p-2">Cheat sheet</button>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 px-6 md:px-24 py-6">
+        <div class="card-custom">
+          <img
+            src="https://picsum.photos/500/300?v=1"
+            alt="placeholder"
+            class="img-custom"
+          />
+          <p class="m-2 line-clamp-2">
+            The aim of this challenge is to put into practice how to use Tailwind
+            to create a responsive UI. Before adding custom styles, check the docs
+            to see if those styles can be achieved using Tailwind class.
+          </p>
+          <label class="mx-2 text-sm text-gray-400">8 mins</label>
+          <button
+          class="mx-2 btn rounded-md p-1 text-md hover:bg-gray-200 border-2 border-gray-500 float-right"
+          >
+            Read more
+          </button>
+        </div>
+        <div class="card-custom">
+          <img
+            src="https://picsum.photos/500/300?v=2"
+            alt="placeholder"
+            class="img-custom"
+          />
+          <p class="m-2 line-clamp-2">
+            The aim of this challenge is to put into practice how to use Tailwind
+            to create a responsive UI. Before adding custom styles, check the docs
+            to see if those styles can be achieved using Tailwind class.
+          </p>
+          <label class="mx-2 text-sm text-gray-400">8 mins</label>
+          <button
+          class="mx-2 btn rounded-md p-1 text-md hover:bg-gray-200 border-2 border-gray-500 float-right"
+          >
+            Read more
+          </button>
+        </div>
+        <div class="card-custom">
+          <img
+            src="https://picsum.photos/500/300?v=3"
+            alt="placeholder"
+            class="img-custom"
+          />
+          <p class="m-2 line-clamp-2">
+            The aim of this challenge is to put into practice how to use Tailwind
+            to create a responsive UI. Before adding custom styles, check the docs
+            to see if those styles can be achieved using Tailwind class.
+          </p>
+          <label class="mx-2 text-sm text-gray-400">8 mins</label>
+          <button
+          class="mx-2 btn rounded-md p-1 text-md hover:bg-gray-200 border-2 border-gray-500 float-right"
+          >
+            Read more
+          </button>
+        </div>
+        <div class="card-custom">
+          <img
+            src="https://picsum.photos/500/300?v=4"
+            alt="placeholder"
+            class="img-custom"
+          />
+          <p class="m-2 line-clamp-2">
+            The aim of this challenge is to put into practice how to use Tailwind
+            to create a responsive UI. Before adding custom styles, check the docs
+            to see if those styles can be achieved using Tailwind class.
+          </p>
+          <label class="mx-2 text-sm text-gray-400">8 mins</label>
+          <button
+          class="mx-2 btn rounded-md p-1 text-md hover:bg-gray-200 border-2 border-gray-500 float-right"
+          >
+            Read more
+          </button>
+        </div>
+        <div class="card-custom">
+          <img
+            src="https://picsum.photos/500/300?v=5"
+            alt="placeholder"
+            class="img-custom"
+          />
+          <p class="m-2 line-clamp-2">
+            The aim of this challenge is to put into practice how to use Tailwind
+            to create a responsive UI. Before adding custom styles, check the docs
+            to see if those styles can be achieved using Tailwind class.
+          </p>
+          <label class="mx-2 text-sm text-gray-400">8 mins</label>
+          <button
+          class="mx-2 btn rounded-md p-1 text-md hover:bg-gray-200 border-2 border-gray-500 float-right"
+          >
+            Read more
+          </button>
+        </div>
+        <div class="card-custom">
+          <img
+            src="https://picsum.photos/500/300?v=6"
+            alt="placeholder"
+            class="img-custom"
+          />
+          <p class="m-2 line-clamp-2">
+            The aim of this challenge is to put into practice how to use Tailwind
+            to create a responsive UI. Before adding custom styles, check the docs
+            to see if those styles can be achieved using Tailwind class.
+          </p>
+          <label class="mx-2 text-sm text-gray-400">8 mins</label>
+          <button
+          class="mx-2 btn rounded-md p-1 text-md hover:bg-gray-200 border-2 border-gray-500 float-right"
+          >
+            Read more
+          </button>
+        </div>
+        <div class="card-custom">
+          <img
+            src="https://picsum.photos/500/300?v=7"
+            alt="placeholder"
+            class="img-custom"
+          />
+          <p class="m-2 line-clamp-2">
+            The aim of this challenge is to put into practice how to use Tailwind
+            to create a responsive UI. Before adding custom styles, check the docs
+            to see if those styles can be achieved using Tailwind class.
+          </p>
+          <label class="mx-2 text-sm text-gray-400">8 mins</label>
+          <button
+          class="mx-2 btn rounded-md p-1 text-md hover:bg-gray-200 border-2 border-gray-500 float-right"
+          >
+            Read more
+          </button>
+        </div>
+        <div class="card-custom">
+          <img
+            src="https://picsum.photos/500/300?v=8"
+            alt="placeholder"
+            class="img-custom"
+          />
+          <p class="m-2 line-clamp-2">
+            The aim of this challenge is to put into practice how to use Tailwind
+            to create a responsive UI. Before adding custom styles, check the docs
+            to see if those styles can be achieved using Tailwind class.
+          </p>
+          <label class="mx-2 text-sm text-gray-400">8 mins</label>
+          <button
+          class="mx-2 btn rounded-md p-1 text-md hover:bg-gray-200 border-2 border-gray-500 float-right"
+          >
+            Read more
+          </button>
+        </div>
+        <div class="card-custom">
+          <img
+            src="https://picsum.photos/500/300?v=9"
+            alt="placeholder"
+            class="img-custom"
+          />
+          <p class="m-2 line-clamp-2">
+            The aim of this challenge is to put into practice how to use Tailwind
+            to create a responsive UI. Before adding custom styles, check the docs
+            to see if those styles can be achieved using Tailwind class.
+          </p>
+          <label class="mx-2 text-sm text-gray-400">8 mins</label>
+          <button
+          class="mx-2 btn rounded-md p-1 text-md hover:bg-gray-200 border-2 border-gray-500 float-right"
+          >
+            Read more
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="flex justify-between bg-gray-900 sticky bottom-0 px-4 py-4 lg:px-12 lg:py-2 text-gray-500 items-center">
+      <label>&#169; 2022 Company, Inc</label>
+      <div>
+        <button
+          class="align-center mr-2 h-10 w-10 items-center justify-center p-3 font-normal"
+          type="button"
+        >
+          <i class="fab fa-twitter flex"></i></button
+        ><button
+          class="align-center mr-2 h-10 w-10 items-center justify-center p-3 font-normal"
+          type="button"
+        >
+          <i class="fab fa-instagram-square flex"></i></button
+        ><button
+          class="align-center mr-2 h-10 w-10 items-center justify-center p-3 font-normal"
+          type="button"
+        >
+          <i class="fab fa-facebook flex"></i>
+        </button>
+      </div>
+    </footer>
     <script src="./app.js"></script>
   </body>
 </html>
