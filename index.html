@@ -17,34 +17,34 @@
   </head>
 
   <body>
-    <nav class="bg-black sticky top-0">
-      <ul class="flex justify-between px-12 py-3">
+    <nav class="bg-black sticky top-0 py-1">
+      <ul class="grid grid-cols-2 justify-between px-12 md:py-3">
         <li>
           <a class="text-white font-bold" href="">DBP LEARN</a>
         </li>
         <li>
           <a
             id="menu-icon"
-            class="md:hidden text-white r-0 sticky"
+            class="md:hidden float-right text-white r-0 sticky"
             onclick="toggleNavbar('menu-items')"
           >
             <i class="fas fa-solid fa-bars"></i>
           </a>
-          <ul
+        </li>  
+        <ul
             id="menu-items"
-            class="md:flex hidden md:space-x-6 md:justify-around"
+            class="md:flex md:col-start-3 md:row-start-1 hidden md:space-x-6 md:justify-around text-gray-500 md:text-white"
           >
             <li>
-              <a class="text-white" href="">About us</a>
+              <a href="">About us</a>
             </li>
             <li>
-              <a class="text-white" href="">Services</a>
+              <a href="">Services</a>
             </li>
             <li>
-              <a class="text-white" href="">Clients</a>
+              <a href="">Clients</a>
             </li>
-          </ul>
-        </li>
+          </ul>      
       </ul>
     </nav>
     <main>
